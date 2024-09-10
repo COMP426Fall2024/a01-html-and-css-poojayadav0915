@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>The Three Sister of Fate</title>
-    </head>
-    <body>
-        <h1>WELCOME</h1>
-        <p>This is my new website</p>
-    </body>
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Three Sisters of Fate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation to Other Pages -->
+    <nav>
+        <a href="page2.html">
+            <button>Clotho</button>
+        </a>
+        <a href="page3.html">
+            <button>Lachesis</button>
+        </a>
+        <a href="page4.html">
+            <button>Atropos</button>
+        </a>
+    </nav>
+
+    <!-- Title and Description -->
+    <center>
+        <h1>THE THREE SISTERS OF FATE</h1>
+        <p>What is your destiny? </p>
+    </center>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="Screen Shot 2024-09-06 at 4.42.10 PM.png" alt="The Three Sisters of Fate" width="500" height="550">
+    </div>
+
+    <!-- Vertical Columns Section -->
+    <div class="columns-container">
+        <div class="column">
+            <h2>Clotho</h2>
+            <ul>
+                <li>Youngest Daughter</li>
+                <li>Is the creation of life</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Lachesis</h2>
+            <ul>
+                <li>Middle Daughter</li>
+                <li>Allocates the fate of people</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Atropos</h2>
+            <ul>
+                <li>Oldest Daughter</li>
+                <li>Determines someone's passing</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- New Section with the Select Element (No JavaScript) -->
+    <section>
+        <center>
+        <h2>Select a Sister of Fate</h2>
+        <select id="sister-select" onchange="location = this.value;">
+            <option value="page2.html" selected>Select</option>
+            <option value="page2.html" >Clotho</option>
+            <option value="page3.html">Lachesis</option>
+            <option value="page4.html">Atropos</option>
+        </select>
+        </center>
+    </section>
+
+
+</body>
+
 </html>

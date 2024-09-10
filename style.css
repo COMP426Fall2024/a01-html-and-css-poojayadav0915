@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d4e8e8; /* Background color set using hex notation */
+    margin: 0;
+    padding: 0;
+}
+
+/* Title and Paragraph Styling */
+h1 {
+    font-family: 'Georgia', serif; /* Different font for headers */
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Image Styling */
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #34495e; /* Border applied to image */
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+}
+
+/* Column Section */
+.columns-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.column {
+    background-color: #f2f7f7; /* Background color set using hex */
+    padding: 20px;
+    width: 30%;
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Adding smooth transition effect */
+}
+
+/* Hover Effect */
+.column:hover {
+    transform: scale(1.05); /* Hover pseudo-class effect */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+}
+
+.column ul {
+    list-style: none; /* Removing bullet points */
+    padding-left: 10px;
+}
+
+.column li::before {
+    content: "• "; /* Custom bullet point */
+    color: #2980b9; /* Bullet point color */
+}
+
+.column li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #34495e;
+}
+
+/* Table Section */
+.table-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    font-family: 'Georgia', serif;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #34495e;
+}
+
+/* Select Element */
+.select-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #34495e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Navigation Buttons */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1f5e84;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* ID-based Selector */
+#footer-text {
+    font-size: 14px;
+}
+
+/* Class-based Selector */
+.table-container h3 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Width Control */
+.image-container img {
+    width: 80%; /* Set image width */
+    height: auto;
+    max-width: 500px;
+}
